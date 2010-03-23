@@ -1,0 +1,34 @@
+/*!
+ * Common CSS stylesheet for use on all my Github pages
+ */
+
+body {
+	background-color: #EEE;
+	font-family: Arial, Geneva, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.header, .block {
+	background-color: #FFF;
+	margin: 0 auto;
+	width: 960px;
+}
+h2 {
+	background-color: #333;
+}
+h2 span {
+	background-color: #FFF;
+	border: 1px solid #333;
+}
+.half {
+	float: left;
+	width: 470px;
+}
+.half.left {
+	margin-right: 10px;
+}
+.half.right {
+	margin-left: 10px;
+}
