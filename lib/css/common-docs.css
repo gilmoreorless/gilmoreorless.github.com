@@ -1,0 +1,213 @@
+
+/*** Basic styles ***/
+
+body {
+    background-color: #D4E9F2;
+    font-family: Raleway, sans-serif;
+    /*font-size: 16px;*/
+    /*line-height: 1.5;*/
+    margin: 0 24px;
+}
+h1, h2 span, h3, h4, h5, h6 {
+    /*background-color: #98AA8E;*/
+    /*background-color: #F4BC99;*/
+    /*background-color: #BFBE94;*/
+    background-color: #809BA5;
+    color: #F9FDFF;
+    padding: 5px;
+    position: relative;
+    text-shadow: 2px 3px 3px #000;
+}
+h1:before, h2 span:before, h3:before, h4:before, h5:before, h6:before,
+h1:after, h2 span:after, h3:after, h4:after, h5:after, h6:after {
+    border: 0 solid transparent;
+    border-right-color: #809BA5;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+h1:after, h2 span:after, h3:after, h4:after, h5:after, h6:after {
+    border-right-color: transparent;
+    border-left-color: #809BA5;
+}
+
+h1 {
+    min-height: 38px;
+}
+h1:before, h1:after {
+    /*border-width: 24px;*/
+    /*left: -48px;*/
+    border: none;
+    background: #809BA5;
+    width: 48px;
+    height: 100%;
+    border-radius: 50%;
+    left: -24px;
+    z-index: -1;
+}
+h1:after {
+    /*border-width: 24px;*/
+    /*right: -48px;*/
+    left: auto;
+    right: -24px;
+}
+
+h2 {
+    /*background: #809BA5;*/
+    /*background: -webkit-linear-gradient(left, #809BA5 0%, #809BA5 83%, #D4E9F2 100%);*/
+    height: 2px;
+    margin: 39px -20px 39px 0;
+}
+h2 span {
+    display: block;
+    max-width: 83%;
+    height: 30px;
+    position: relative;
+    top: -19px;
+}
+h2 span:before {
+    border-width: 20px;
+    left: -40px;
+}
+h2 span:after {
+    border-width: 20px;
+    right: -40px;
+}
+
+h3 {
+    height: 24px;
+    max-width: 67%;
+}
+h3:before {
+    border-width: 17px;
+    left: -34px;
+}
+h3:after {
+    border-width: 17px;
+    right: -34px;
+}
+
+h4 {
+    height: 20px;
+    max-width: 50%;
+}
+h4:before {
+    border-color: #809BA5;
+    border-left-color: transparent;
+    border-width: 15px 0 15px 15px;
+    left: -15px;
+}
+h4:after {
+    border-color: #809BA5;
+    border-right-color: transparent;
+    border-width: 15px 15px 15px 0;
+    right: -15px;
+}
+
+h5 {
+    height: 16px;
+    max-width: 33%;
+}
+h5:before {
+    border-color: #809BA5;
+    border-left-color: transparent;
+    border-width: 13px 0 13px 13px;
+    left: -13px;
+}
+h5:after {
+    border-width: 13px;
+    right: -26px;
+}
+
+h6 {
+    height: 14px;
+    max-width: 17%;
+}
+h6:before {
+    border-width: 12px;
+    left: -24px;
+}
+h6:after {
+    border-width: 12px;
+    right: -24px;
+}
+
+/*
+h1 span {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+*/
+
+
+#wrapper {
+    margin: 10px auto;
+    max-width: 900px;
+}
+pre, code {
+    background-color: #000;
+    border-radius: 5px;
+    color: #0F0;
+    font-family: Monaco,Consolas,'Courier New',monospace;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 1em 0;
+    padding: 5px;
+}
+pre {
+    white-space: pre-line;
+}
+code {
+    margin: 0;
+    padding: 2px 5px;
+}
+pre code {
+    font-size: 1em;
+    padding: 0;
+}
+code .comment {
+    color: #1A1;
+}
+ul {
+    margin: 1em 0;
+    padding: 0 20px;
+}
+ul ul {
+    margin-top: 0.25em;
+}
+a {
+    color: #333;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+a.forkme {
+    background: url(../img/forkme-terminal.png) no-repeat 0 0;
+    height: 149px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-indent: -9999em;
+    width: 149px;
+}
+
+
+/*** DEBUG - Grid ***/
+
+/*h1,h2,h3,h4,h5,h6 {font-size:1em;margin:0;min-height:0 !important;}
+body.debug-grid {
+    background-image: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 23px, #f90 23px, #f90 24px);
+    background-size: 100% 24px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+*/
