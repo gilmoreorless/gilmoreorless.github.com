@@ -60,11 +60,9 @@ a:hover {
 
 pre, code {
     background-color: #000;
+    background-color: #EBF5F9;
     background-color: hsl(198, 54%, 95%);
-    /*background-color: rgba(0, 0, 0, 0.5);*/
     border-radius: 5px;
-    /*color: #0F0;*/
-    /*color: #F23B3B;*/
     color: hsl(350, 80%, 30%);
     font-family: Monaco,Consolas,'Courier New',monospace;
     font-size: 0.875em;        /* 14px */
@@ -84,7 +82,6 @@ pre code {
     padding: 0;
 }
 code .comment {
-    /*color: #1A1;*/
     color: hsl(50, 15%, 37%);
 }
 
@@ -103,28 +100,72 @@ dd {
 }
 
 a.forkme {
-    background: url(../img/forkme-terminal.png) no-repeat 0 0;
-    height: 149px;
+    background-color: #000;
+    border-width: 1px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #0F0;
+    display: block;
+    font-family: Monaco,Consolas,'Courier New',monospace;
+    font-size: 13px;
+    padding: 4px 0;
     position: fixed;
-    right: 0;
-    top: 0;
-    text-indent: -9999em;
-    width: 149px;
+    right: -62px;
+    text-decoration: none;
+    text-align: center;
+    top: 35px;
+    width: 220px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 80px 0;
+       -moz-transform-origin: 80px 0;
+        -ms-transform-origin: 80px 0;
+         -o-transform-origin: 80px 0;
+            transform-origin: 80px 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+}
+a.forkme:hover {
+    text-shadow: 1px 1px 15px #0F0, -1px -1px 15px #0F0;
+    box-shadow: 0 0 20px #000;
+}
+
+@media screen and (max-width: 768px) {
+    a.forkme {
+        position: absolute;
+        right: -220px;
+        top: 0;
+        -webkit-transform: rotate(90deg);
+           -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: 0 0;
+           -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+             -o-transform-origin: 0 0;
+                transform-origin: 0 0;
+    }
 }
 
 
 /*** DEBUG - Grid ***/
 
-/*h1,h2,h3,h4,h5,h6 {font-size:1em;margin:0;min-height:0 !important;}
 body.debug-grid {
-    background-image: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 23px, #f90 23px, #f90 24px);
+    background-image: repeating-linear-gradient(to bottom,
+        rgba(0,0,0,0) 0,
+        rgba(0,0,0,0) 11px,
+        rgba(255,102,0,0.3) 11px,
+        rgba(255,102,0,0.3) 12px,
+        rgba(0,0,0,0) 12px,
+        rgba(0,0,0,0) 23px,
+        #f60 23px,
+        #f60 24px
+    );
     background-size: 100% 24px;
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 }
-*/
