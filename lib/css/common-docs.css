@@ -98,6 +98,11 @@ dl, dt {
 dd {
     margin-left: 36px;
 }
+dl.deprecated {
+    border-top: 1px dashed #89a;
+    font-style: italic;
+    margin-top: 11px;
+}
 
 a.forkme {
     background-color: #000;
