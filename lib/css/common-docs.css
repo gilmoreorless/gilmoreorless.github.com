@@ -46,6 +46,17 @@ h4 {
     line-height: 1.2;
     margin: 36px 0 24px 0;
 }
+h1 .version {
+    background-color: #426472;
+    border-radius: .25em;
+    color: #EBF5F9; /* hsl(198, 54%, 95%); */
+    font-size: 24px;
+    line-height: 2.5;
+    margin-left: 24px;
+    padding: 4px 12px;
+    text-shadow: 1px 1px 2px #456;
+    vertical-align: top;
+}
 
 p {
     margin: 12px 0 0 0;
@@ -59,11 +70,9 @@ a:hover {
 }
 
 pre, code {
-    background-color: #000;
-    background-color: #EBF5F9;
-    background-color: hsl(198, 54%, 95%);
+    background-color: #EBF5F9; /* hsl(198, 54%, 95%); */
     border-radius: 5px;
-    color: hsl(350, 80%, 30%);
+    color: #8A0F24; /* hsl(350, 80%, 30%); */
     font-family: Monaco,Consolas,'Courier New',monospace;
     font-size: 0.875em;        /* 14px */
     line-height: 1.714285714;  /* 24px */
@@ -82,7 +91,7 @@ pre code {
     padding: 0;
 }
 code .comment {
-    color: hsl(50, 15%, 37%);
+    color: #6D6850; /* hsl(50, 15%, 37%); */
 }
 
 ul {
