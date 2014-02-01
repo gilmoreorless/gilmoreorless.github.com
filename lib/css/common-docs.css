@@ -113,6 +113,18 @@ dl.deprecated {
     margin-top: 11px;
 }
 
+.changelog dt {
+    font-weight: bold;
+}
+.changelog .major {
+    font-size: 1.5em;
+    line-height: 1;
+}
+.changelog .minor {
+    font-size: 1.25em;
+    line-height: 1.2;
+}
+
 a.forkme {
     background-color: #000;
     border-width: 1px 0;
