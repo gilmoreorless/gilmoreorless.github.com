@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    max-width: 60rem;
+}
+
+/*** Project listings ***/
+
+.project-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-item {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 15rem;
+    list-style: none;
+    margin: 0;
+    max-width: 30rem;
+    padding: .5em;
+}
+.project-item.has-preview {
+    flex-basis: 30rem;
+}
+.project-details {
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+.has-preview .project-details {
+    padding-left: 11rem;
+}
+.project-details h3 {
+    margin: 1rem 0;
+}
+.project-preview {
+    background: linear-gradient(teal, green);
+    float: left;
+    height: 5rem;
+    margin: 1rem 0 1rem -11rem;
+    width: 10rem;
+}
+

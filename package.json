@@ -1,0 +1,25 @@
+{
+  "name": "gilmoreorless.github.io",
+  "version": "1.0.0",
+  "droneVersion": "1.exasperated.0.0.tallots.1447397897.7",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilmoreorless/gilmoreorless.github.com.git"
+  },
+  "author": "Gilmore Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gilmoreorless/gilmoreorless.github.com/issues"
+  },
+  "homepage": "http://gilmoreorless.github.io/",
+  "devDependencies": {
+    "autoprefixer": "6.0.3",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-mustache": "2.0.1",
+    "gulp-postcss": "6.0.1",
+    "gulp-sourcemaps": "1.6.0"
+  }
+}
