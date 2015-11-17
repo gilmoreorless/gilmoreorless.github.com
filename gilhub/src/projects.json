@@ -62,5 +62,51 @@
         "tags": []
       }
     ]
+  },
+  {
+    "title": "Sites",
+    "projects": [
+      {
+        "name": "Double 30 overs",
+        "url": "https://gilmoreorless.github.io/double-30-overs",
+        "description": "SOMETHING",
+        "tags": []
+      },
+      {
+        "name": "Daylight saving time around the world",
+        "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
+        "description": "SOMETHING ELSE AGAIN",
+        "tags": []
+      },
+      {
+        "name": "",
+        "url": "https://github.com/gilmoreorless/",
+        "description": "",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "title": "Presentations",
+    "projects": [
+      {
+        "name": "Double 30 overs",
+        "url": "https://gilmoreorless.github.io/double-30-overs",
+        "description": "SOMETHING",
+        "tags": []
+      },
+      {
+        "name": "Daylight saving time around the world",
+        "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
+        "description": "SOMETHING ELSE AGAIN",
+        "tags": []
+      },
+      {
+        "name": "",
+        "url": "https://github.com/gilmoreorless/",
+        "description": "",
+        "tags": []
+      }
+    ]
   }]
 }

@@ -1,7 +1,11 @@
 body {
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
     max-width: 60rem;
+}
+h1, h2, h3 {
+    font-weight: 600;
 }
 
 /*** Project listings ***/
@@ -43,5 +47,110 @@ body {
     height: 5rem;
     margin: 1rem 0 1rem -11rem;
     width: 10rem;
+}
+
+
+/*** EXPERIMENTAL themed sections ***/
+
+
+body {
+    background-color: #112;
+    color: #fff;
+    max-width: none; /* override */
+}
+a {
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+}
+header,
+.category-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.category {
+    background-repeat: no-repeat;
+    padding-top: 0.25rem;
+    padding-bottom: 1.5rem;
+}
+.category-theme-space {
+    background-image:
+        radial-gradient(circle at 10% 10%, #ff9, transparent 3px),
+        radial-gradient(circle at 30% 50%, #ffc, transparent 5px),
+        radial-gradient(circle at 50% 90%, #fcc, transparent 3px),
+        radial-gradient(circle at 80% 30%, #fff, transparent 4px),
+        linear-gradient(to bottom, #112, #224 85%, #336);
+    background-repeat: repeat;
+    background-size:
+        19% 23%,
+        23% 27%,
+        31% 47%,
+        39% 39%,
+        100% 100%;
+}
+.category-theme-sky {
+    background-image: radial-gradient(150% 100% at 50% 100%, #48A6E8 80%, #336);
+    padding-top: 3rem;
+}
+.category-theme-forest {
+    background-image: linear-gradient(to bottom, #48A6E8, #BACCDC)
+}
+.category-theme-ground {
+/*     background-image: linear-gradient(to bottom, #11AF11 2%, #56400E 12%, #3A2F17); */
+    background-color: #BACCDC;
+    background-image: radial-gradient(200% 100% at 50% 100%, #3A2F17, #56400E 88%, #11AF11 97%, transparent);
+    padding-top: 2rem;
+}
+
+.project-item {
+    padding: 0;
+}
+.project-details {
+    border: none;
+}
+.category-theme-sky .project-item {
+    background-image:
+        radial-gradient(2.5rem 2rem at 2.75rem 2rem, #fff 90%, transparent),
+        radial-gradient(2.5rem 2rem at calc(100% - 4rem) 2.25rem, #fff 90%, transparent),
+        radial-gradient(3rem 1.5rem at 3.5rem calc(100% - 2.25rem), #fff 90%, transparent),
+        radial-gradient(2rem 1rem at 5rem calc(100% - 1.25rem), #fff 90%, transparent),
+        radial-gradient(ellipse farthest-side, #fff 90%, transparent 95%);
+    background-repeat: no-repeat;
+    color: #336;
+    margin: .5rem;
+}
+.category-theme-sky a {
+    color: #336;
+}
+.category-theme-sky .project-details {
+    padding: 1rem 2rem;
+}
+
+.category-theme-forest .project-item {
+    background-image: radial-gradient(ellipse farthest-side, #55B72D 90%, transparent 95%);
+    padding-bottom: 1rem;
+    position: relative;
+}
+.category-theme-forest .project-item::after {
+    background-color: #928D4C;
+    background-image:
+        radial-gradient(60% .5rem at 0 0, #55B72D 85%, transparent),
+        linear-gradient(to right, transparent, #A29C4C, transparent);
+    border-radius: 50% / .3rem;
+    bottom: -2.5rem;
+    content: '';
+    height: 4rem;
+    left: calc(50% - 1rem);
+    position: absolute;
+    width: 2rem;
+}
+
+.category-theme-ground .project-item {
+    background-color: #251B05;
+    box-shadow: inset 0 0 10px rgba(35, 28, 13, 0.72);
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
 }
 

@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="/gilhub/lib/home.css">
 </head>
 <body>
-    <h1>gilmoreorless home</h1>
-    <p>A description of some sort.</p>
+    <header>
+        <h1>gilmoreorless home</h1>
+        <p>A description of some sort.</p>
+    </header>
     {{#categories}}
     <div class="category category-theme-{{theme}}">
-        <h2>{{title}}</h2>
-        <ul class="project-list">
-            {{#projects}}
-            <li class="project-item">
-                <div class="project-details{{#tags}} project-tag-{{.}}{{/tags}}">
-                    {{#img}}<img src="{{{img}}}" alt="" class="project-preview">{{/img}}
-                    <h3 class="project-title"><a href="{{{url}}}">{{name}}</a></h3>
-                    <p class="project-description">{{description}}</p>
-                </div>
-            </li>
-            {{/projects}}
-        </ul>
+        <div class="category-content">
+            <h2>{{title}}</h2>
+            <ul class="project-list">
+                {{#projects}}
+                <li class="project-item">
+                    <div class="project-details{{#tags}} project-tag-{{.}}{{/tags}}">
+                        {{#img}}<img src="{{{img}}}" alt="" class="project-preview">{{/img}}
+                        <h3 class="project-title"><a href="{{{url}}}">{{name}}</a></h3>
+                        <p class="project-description">{{description}}</p>
+                    </div>
+                </li>
+                {{/projects}}
+            </ul>
+        </div>
     </div>
     {{/categories}}
 </body>
