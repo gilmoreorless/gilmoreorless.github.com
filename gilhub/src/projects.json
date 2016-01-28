@@ -21,22 +21,39 @@
         "tags": ["npm"]
       },
       {
-        "name": "jQuery Nearest Element",
-        "url": "https://gilmoreorless.github.io/jquery-nearest",
-        "description": "jQuery plugin to find the elements in a page that are closest to (or furthest away from) a particular point or element, based on pixel dimensions.",
-        "tags": ["jquery", "npm"]
+        "name": "drone-ver",
+        "url": "https://github.com/gilmoreorless/drone-ver",
+        "description": "Drone Versioning made easy, but not more sane.",
+        "tags": ["npm"]
       },
       {
-        "name": "jQuery ",
-        "url": "https://github.com/gilmoreorless/jquery-",
-        "description": "",
-        "tags": ["jquery"]
+        "name": "Chuckles",
+        "url": "https://github.com/gilmoreorless/chuckles",
+        "description": "A library for creating ventriloquist dummy effects in canvas — because that’s what everyone needs, right?"
       },
       {
         "name": "Sublime zoneinfo",
         "url": "https://github.com/gilmoreorless/sublime-zoneinfo",
         "description": "A Sublime Text package that adds syntax highlighting for IANA time zone database files (a.k.a. zoneinfo files).",
         "tags": ["sublime"]
+      },
+      {
+        "name": "jQuery nearest element",
+        "url": "https://gilmoreorless.github.io/jquery-nearest",
+        "description": "jQuery plugin to find the elements in a page that are closest to (or furthest away from) a particular point or element, based on pixel dimensions.",
+        "tags": ["jquery", "npm"]
+      },
+      {
+        "name": "jQuery content size",
+        "url": "https://github.com/gilmoreorless/jquery-contentsize",
+        "description": "jQuery plugin to get the real dimensions of an element’s children, which don’t always match the parent’s width and height.",
+        "tags": ["jquery"]
+      },
+      {
+        "name": "jQuery easing repeater",
+        "url": "https://github.com/gilmoreorless/jquery-easing-repeater",
+        "description": "A simple way to speed up and repeat an easing function multiple times over the course of a single animation call.",
+        "tags": ["jquery"]
       }
     ]
   },
@@ -44,22 +61,16 @@
     "title": "Data visualisations",
     "projects": [
       {
-        "name": "Double 30 overs",
-        "url": "https://gilmoreorless.github.io/double-30-overs",
-        "description": "SOMETHING",
-        "tags": []
+        "name": "Double the 30-over score",
+        "url": "https://gilmoreorless.github.io/double-30-overs/",
+        "img": "TBC",
+        "description": "A cricket analysis investigating whether an old maxim holds up to statistical scrutiny."
       },
       {
-        "name": "Daylight saving time around the world",
+        "name": "Daylight saving rules around the world",
         "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
-        "description": "SOMETHING ELSE AGAIN",
-        "tags": []
-      },
-      {
-        "name": "",
-        "url": "https://github.com/gilmoreorless/",
-        "description": "",
-        "tags": []
+        "img": "TBC",
+        "description": "An overview of all the different times of the year when countries and regions use daylight saving time."
       }
     ]
   },
@@ -67,22 +78,16 @@
     "title": "Sites",
     "projects": [
       {
-        "name": "Double 30 overs",
-        "url": "https://gilmoreorless.github.io/double-30-overs",
-        "description": "SOMETHING",
-        "tags": []
+        "name": "Can I Animate…?",
+        "url": "http://canianimate.com/",
+        "img": "TBC",
+        "description": "Like “Can I Use” but for CSS animations. Find out which CSS properties can be animated and get details of how they animate."
       },
       {
-        "name": "Daylight saving time around the world",
-        "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
-        "description": "SOMETHING ELSE AGAIN",
-        "tags": []
-      },
-      {
-        "name": "",
-        "url": "https://github.com/gilmoreorless/",
-        "description": "",
-        "tags": []
+        "name": "Background image layers",
+        "url": "https://ecssplain.github.io/background-image-layers/",
+        "img": "TBC",
+        "description": "Interactive breakdown of how browsers render multiple CSS backgrounds on a single element."
       }
     ]
   },
@@ -90,22 +95,16 @@
     "title": "Presentations",
     "projects": [
       {
-        "name": "Double 30 overs",
-        "url": "https://gilmoreorless.github.io/double-30-overs",
-        "description": "SOMETHING",
-        "tags": []
+        "name": "Ease yourself into animation",
+        "url": "https://gilmoreorless.github.io/sydjs-preso-easing/",
+        "img": "TBC",
+        "description": "A primer on how easing works in animations and how it’s coded in various JS frameworks."
       },
       {
-        "name": "Daylight saving time around the world",
-        "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
-        "description": "SOMETHING ELSE AGAIN",
-        "tags": []
-      },
-      {
-        "name": "",
-        "url": "https://github.com/gilmoreorless/",
-        "description": "",
-        "tags": []
+        "name": "Gradient Circus",
+        "url": "https://gilmoreorless.github.io/sydcss-preso-gradient-circus/",
+        "img": "TBC",
+        "description": "A overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='???'>Recording available on YouTube.</a>"
       }
     ]
   }]
