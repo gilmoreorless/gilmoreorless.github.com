@@ -63,13 +63,13 @@
       {
         "name": "Double the 30-over score",
         "url": "https://gilmoreorless.github.io/double-30-overs/",
-        "img": "TBC",
+        "img": "../img/project-double-30-overs.png",
         "description": "A cricket analysis investigating whether an old maxim holds up to statistical scrutiny."
       },
       {
         "name": "Daylight saving rules around the world",
         "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
-        "img": "TBC",
+        "img": "../img/project-dst-rules.png",
         "description": "An overview of all the different times of the year when countries and regions use daylight saving time."
       }
     ]
@@ -78,15 +78,15 @@
     "title": "Sites",
     "projects": [
       {
-        "name": "Can I Animate…?",
+        "name": "Can I Animate...?",
         "url": "http://canianimate.com/",
-        "img": "TBC",
+        "img": "../img/project-canianimate.png",
         "description": "Like “Can I Use” but for CSS animations. Find out which CSS properties can be animated and get details of how they animate."
       },
       {
         "name": "Background image layers",
         "url": "https://ecssplain.github.io/background-image-layers/",
-        "img": "TBC",
+        "img": "../img/project-bgimage-layers.png",
         "description": "Interactive breakdown of how browsers render multiple CSS backgrounds on a single element."
       }
     ]
@@ -97,14 +97,14 @@
       {
         "name": "Ease yourself into animation",
         "url": "https://gilmoreorless.github.io/sydjs-preso-easing/",
-        "img": "TBC",
+        "img": "../img/project-easing.png",
         "description": "A primer on how easing works in animations and how it’s coded in various JS frameworks."
       },
       {
         "name": "Gradient Circus",
         "url": "https://gilmoreorless.github.io/sydcss-preso-gradient-circus/",
-        "img": "TBC",
-        "description": "A overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='???'>Recording available on YouTube.</a>"
+        "img": "../img/project-gradient-circus.png",
+        "description": "A overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Recording available on YouTube.</a>"
       }
     ]
   }]
