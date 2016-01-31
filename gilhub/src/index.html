@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>gilmoreorless</title>
     <link rel="stylesheet" href="/gilhub/lib/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
             <h2>{{title}}</h2>
             <ul class="project-list">
                 {{#projects}}
-                <li class="project-item {{#img}}has-preview{{/img}}">
+                <li class="project-item{{#img}} has-preview{{/img}}">
                     <div class="project-details{{#tags}} project-tag-{{.}}{{/tags}}">
                         {{#img}}<img src="{{{img}}}" alt="" class="project-preview">{{/img}}
                         <h3 class="project-title"><a href="{{{url}}}">{{name}}</a></h3>
@@ -29,5 +30,6 @@
         </div>
     </div>
     {{/categories}}
+    <script src="/gilhub/lib/home.js"></script>
 </body>
 </html>

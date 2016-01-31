@@ -1,12 +1,19 @@
 body {
     background-color: #112;
     color: #fff;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
     margin: 0 auto;
 }
 h1, h2, h3 {
-    font-weight: 600;
+    font-weight: 700;
+}
+.fira-loaded body,
+.fira-loaded h1,
+.fira-loaded h2,
+.fira-loaded h3 {
+    font-family: 'Fira Sans', sans-serif;
 }
 a {
     color: #fff;
@@ -72,7 +79,6 @@ header,
     margin: 1rem 0;
 }
 .project-preview {
-    background: linear-gradient(teal, green);
     height: 7.5rem;
     margin: 0;
     width: 10rem;
