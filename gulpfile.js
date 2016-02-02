@@ -34,4 +34,4 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('gilhub/lib'));
 });
 
-gulp.task('default', ['html', 'scripts']);
+gulp.task('default', ['html', 'prefix', 'scripts']);
