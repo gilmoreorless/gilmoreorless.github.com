@@ -267,6 +267,59 @@ header,
     padding: 0 2rem;
 }
 
+/** Fit text to the tree shape if possible **/
+
+@supports (shape-outside: polygon(0 0)) {
+    .category-theme-forest .project-item {
+        padding-bottom: 0;
+    }
+    .category-theme-forest .project-details {
+        padding: 0.5rem;
+    }
+    .category-theme-forest .project-preview {
+        left: 50%;
+        margin-left: -5rem;
+        position: absolute;
+        top: 1rem;
+    }
+    .category-theme-forest .project-title {
+        margin-top: 9.5rem;
+    }
+    .category-theme-forest .project-title,
+    .category-theme-forest .project-description {
+        padding: 0 1rem;
+    }
+    /* What's really needed here is `shape-inside`, but it doesn't exist in browsers yet (Feb 2016) */
+    .category-theme-forest .unsemantic-empty-shape-element::before,
+    .category-theme-forest .unsemantic-empty-shape-element::after {
+        content: '';
+        float: left;
+        height: 19rem;
+        position: relative;
+        shape-margin: 0.5rem;
+        shape-outside: polygon(0% 0%, 0% 100%, 100% 100%, 74% 98%, 50% 93%, 29% 85%, 13% 75%, 3% 63%, 0% 50%, 3% 37%, 13% 25%, 29% 15%, 50% 7%, 74% 2%, 100% 0%);
+        width: 50%;
+    }
+    .category-theme-forest .unsemantic-empty-shape-element::after {
+        float: right;
+        shape-outside: polygon(0% 0%, 26% 2%, 50% 7%, 71% 15%, 87% 25%, 97% 37%, 100% 50%, 97% 63%, 87% 75%, 71% 85%, 50% 93%, 26% 98%, 0% 100%, 100% 100%, 100% 0%);
+    }
+
+    @media (max-width: 30rem) {
+        .category-theme-forest .unsemantic-empty-shape-element::before,
+        .category-theme-forest .unsemantic-empty-shape-element::after {
+            height: 21rem;
+        }
+    }
+
+    @media (max-width: 21rem) {
+        .category-theme-forest .unsemantic-empty-shape-element::before,
+        .category-theme-forest .unsemantic-empty-shape-element::after {
+            height: 24rem;
+        }
+    }
+}
+
 
 /*** Themed items - ground ***/
 
