@@ -16,7 +16,7 @@ if (~location.hostname.indexOf('github.com') || ~location.hostname.indexOf('gith
         ga.q.push(arguments);
     };
     ga.q = [
-        ['create', 'UA-8341018-6', 'auto'],
+        ['create', 'UA-8341018-3', 'auto'],
         ['send', 'pageview']
     ];
     ga.l = +new Date();
