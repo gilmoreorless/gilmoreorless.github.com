@@ -275,6 +275,40 @@ header,
     text-align: center;
     padding: 0 2rem;
 }
+/* Bird animation */
+.category-theme-forest .project-item:nth-child(2) .project-title::after {
+    -webkit-animation: bird-head 20s infinite;
+            animation: bird-head 20s infinite;
+    content: '🐦';
+    font-weight: normal;
+    margin-left: 2rem;
+    margin-top: -4rem;
+    position: absolute;
+}
+@-webkit-keyframes bird-head {
+    0%, 85%, 100% {
+        opacity: 0;
+        -webkit-transform: translateY(0.25rem) scale(0.2, 0.8);
+                transform: translateY(0.25rem) scale(0.2, 0.8);
+    }
+    90%, 98% {
+        opacity: 0.8;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes bird-head {
+    0%, 85%, 100% {
+        opacity: 0;
+        -webkit-transform: translateY(0.25rem) scale(0.2, 0.8);
+                transform: translateY(0.25rem) scale(0.2, 0.8);
+    }
+    90%, 98% {
+        opacity: 0.8;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
 
 /** Fit text to the tree shape if possible **/
 
