@@ -1,6 +1,8 @@
 var fs = require('fs');
 var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
+var postcssGradients = require('postcss-gradient-transparency-fix');
 var mustache = require('gulp-mustache');
 var concat = require('gulp-concat-util');
 
@@ -18,12 +20,12 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('prefix', function () {
+gulp.task('css', function () {
     return gulp.src('gilhub/src/*.css')
-        .pipe(autoprefixer({
+        .pipe(postcss([ autoprefixer({
             browsers: ['last 2 versions'],
             cascade: true
-        }))
+        }), postcssGradients ]))
         .pipe(gulp.dest('gilhub/lib'));
 });
 
@@ -34,4 +36,4 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('gilhub/lib'));
 });
 
-gulp.task('default', ['html', 'prefix', 'scripts']);
+gulp.task('default', ['html', 'css', 'scripts']);

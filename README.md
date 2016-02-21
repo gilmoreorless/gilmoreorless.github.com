@@ -32,9 +32,9 @@ This contains all the files needed for the home page at [gilmoreorless.github.io
 
 Takes the project definitions from `gilhub/src/projects.json`, feeds them into `gilhub/src/index.html` using [Moustache](https://github.com/janl/mustache.js/), and generates the root `index.html`.
 
-##### `gulp prefix` — add vendor prefixes to CSS
+##### `gulp css` — compatibility fixes for CSS
 
-Runs `gilhub/src/home.css` through [Autoprefixer](https://github.com/postcss/autoprefixer) and saves it as `gilhub/lib/home.css`.
+Runs `gilhub/src/home.css` through [Autoprefixer](https://github.com/postcss/autoprefixer) and [fixes gradients](https://github.com/gilmoreorless/postcss-gradient-transparency-fix), then saves it as `gilhub/lib/home.css`.
 
 ##### `gulp scripts` — generate single JS bundle
 
@@ -42,7 +42,7 @@ Takes any required dependencies (at the moment, that’s just [fontfaceobserver]
 
 ##### `gulp` — everything together
 
-Runs the `html`, `prefix` and `scripts` tasks. This should always be run just before committing and pushing live.
+Runs the `html`, `css` and `scripts` tasks. This should always be run just before committing and pushing live.
 
 
 
