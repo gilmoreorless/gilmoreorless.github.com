@@ -21,6 +21,12 @@
         "tags": ["npm"]
       },
       {
+        "name": "postcss-gradient-transparency-fix",
+        "url": "https://github.com/gilmoreorless/postcss-gradient-transparency-fix",
+        "description": "A PostCSS plugin to fix gradient transparency for certain browsers (looking at you, Safari).",
+        "tags": ["npm", "postcss"]
+      },
+      {
         "name": "drone-ver",
         "url": "https://github.com/gilmoreorless/drone-ver",
         "description": "Drone Versioning made easy, but not more sane.",
