@@ -23,7 +23,7 @@ gulp.task('html', function () {
 gulp.task('css', function () {
     return gulp.src('gilhub/src/*.css')
         .pipe(postcss([ autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 3 versions', 'Firefox ESR'],
             cascade: true
         }), postcssGradients ]))
         .pipe(gulp.dest('gilhub/lib'));

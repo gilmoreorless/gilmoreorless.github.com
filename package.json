@@ -15,15 +15,15 @@
   },
   "homepage": "http://gilmoreorless.github.io/",
   "dependencies": {
-    "fontfaceobserver": "1.6.3"
+    "fontfaceobserver": "^2.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "6.0.3",
-    "gulp": "3.9.0",
-    "gulp-concat-util": "0.5.4",
-    "gulp-mustache": "2.0.1",
-    "gulp-postcss": "6.1.0",
-    "gulp-sourcemaps": "1.6.0",
-    "postcss-gradient-transparency-fix": "1.0.1"
+    "autoprefixer": "^6.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-mustache": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-gradient-transparency-fix": "^1.0.2"
   }
 }
