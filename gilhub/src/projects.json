@@ -5,7 +5,7 @@
       {
         "name": "css-animated-properties",
         "url": "https://github.com/gilmoreorless/css-animated-properties",
-        "description": "A simple list of which CSS properties can be animated and how. Available on npm. Some extra words to pad out the description a bit.",
+        "description": "A simple list of which CSS properties can be animated and how.",
         "tags": ["npm"]
       },
       {
