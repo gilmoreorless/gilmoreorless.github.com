@@ -52,23 +52,19 @@ header,
 /*** Project listings base ***/
 
 .project-list {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
 }
 .project-item {
     box-sizing: border-box;
-    -webkit-flex: 1 1 15rem;
-        -ms-flex: 1 1 15rem;
-            flex: 1 1 15rem;
+    -ms-flex: 1 1 15rem;
+        flex: 1 1 15rem;
     list-style: none;
     margin: 0;
     max-width: 30rem;
@@ -79,9 +75,8 @@ header,
     padding: 0 1rem;
 }
 .project-item.has-preview {
-    -webkit-flex-basis: 20rem;
-        -ms-flex-preferred-size: 20rem;
-            flex-basis: 20rem;
+    -ms-flex-preferred-size: 20rem;
+        flex-basis: 20rem;
 }
 .project-details h3 {
     margin: 1rem 0;
@@ -277,36 +272,21 @@ header,
 }
 /* Bird animation */
 .category-theme-forest .project-item:nth-child(2) .project-title::after {
-    -webkit-animation: bird-head 20s infinite;
-            animation: bird-head 20s infinite;
+    animation: bird-head 20s infinite;
     content: '🐦';
     font-weight: normal;
     margin-left: 2rem;
     margin-top: -4rem;
     position: absolute;
 }
-@-webkit-keyframes bird-head {
-    0%, 85%, 100% {
-        opacity: 0;
-        -webkit-transform: translateY(0.25rem) scale(0.2, 0.8);
-                transform: translateY(0.25rem) scale(0.2, 0.8);
-    }
-    90%, 98% {
-        opacity: 0.8;
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-}
 @keyframes bird-head {
     0%, 85%, 100% {
         opacity: 0;
-        -webkit-transform: translateY(0.25rem) scale(0.2, 0.8);
-                transform: translateY(0.25rem) scale(0.2, 0.8);
+        transform: translateY(0.25rem) scale(0.2, 0.8);
     }
     90%, 98% {
         opacity: 0.8;
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -389,18 +369,16 @@ header,
     border-radius: 1rem;
     margin: 1rem;
     padding: .5rem;
-    -webkit-transform: skewY(-1deg);
-        -ms-transform: skewY(-1deg);
-            transform: skewY(-1deg);
+    -ms-transform: skewY(-1deg);
+        transform: skewY(-1deg);
 }
 .category-theme-ground .project-preview {
     bottom: 0.2rem;
     border-radius: 0 8% 100% 0 / 0 90% 14% 0;
     position: absolute;
     right: 0.3rem;
-    -webkit-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
     opacity: 0.2;
 }
 
