@@ -1,36 +1,18 @@
 {
   "categories": [{
-    "title": "Libraries",
+    "title": "Libraries & scripts",
     "projects": [
-      {
-        "name": "css-animated-properties",
-        "url": "https://github.com/gilmoreorless/css-animated-properties",
-        "description": "A simple list of which CSS properties can be animated and how.",
-        "tags": ["npm"]
-      },
-      {
-        "name": "css-background-parser",
-        "url": "https://github.com/gilmoreorless/css-background-parser",
-        "description": "Parse an element’s CSS background properties to get a list of individual backgrounds.",
-        "tags": ["npm"]
-      },
-      {
-        "name": "css-shorthand-properties",
-        "url": "https://github.com/gilmoreorless/css-shorthand-properties",
-        "description": "A simple list of CSS shorthand properties and which longhand properties they expand to.",
-        "tags": ["npm"]
-      },
-      {
-        "name": "postcss-gradient-transparency-fix",
-        "url": "https://github.com/gilmoreorless/postcss-gradient-transparency-fix",
-        "description": "A PostCSS plugin to fix gradient transparency for certain browsers (looking at you, Safari).",
-        "tags": ["npm", "postcss"]
-      },
       {
         "name": "drone-ver",
         "url": "https://github.com/gilmoreorless/drone-ver",
         "description": "Drone Versioning made easy, but not more sane.",
-        "tags": ["cli", "npm"]
+        "tags": ["cli", "npm", "ridiculous"]
+      },
+      {
+        "name": "emoji-censor",
+        "url": "https://github.com/gilmoreorless/emoji-censor",
+        "description": "Censor out any emoji characters in a piece of text, either visually or audibly.",
+        "tags": ["ridiculous"]
       },
       {
         "name": "yakstack",
@@ -39,9 +21,34 @@
         "tags": ["cli", "pip"]
       },
       {
-        "name": "Chuckles",
+        "name": "chuckles",
         "url": "https://github.com/gilmoreorless/chuckles",
-        "description": "A library for creating ventriloquist dummy effects in canvas — because that’s what everyone needs, right?"
+        "description": "A library for creating ventriloquist dummy effects in canvas — because that’s what everyone needs, right?",
+        "tags": ["ridiculous"]
+      },
+      {
+        "name": "postcss-gradient-transparency-fix",
+        "url": "https://github.com/gilmoreorless/postcss-gradient-transparency-fix",
+        "description": "A PostCSS plugin to fix gradient transparency for certain browsers (looking at you, Safari).",
+        "tags": ["npm", "postcss"]
+      },
+      {
+        "name": "css-background-parser",
+        "url": "https://github.com/gilmoreorless/css-background-parser",
+        "description": "Parse an element’s CSS background properties to get a list of individual backgrounds.",
+        "tags": ["npm"]
+      },
+      {
+        "name": "css-animated-properties",
+        "url": "https://github.com/gilmoreorless/css-animated-properties",
+        "description": "A simple list of which CSS properties can be animated and how.",
+        "tags": ["npm"]
+      },
+      {
+        "name": "css-shorthand-properties",
+        "url": "https://github.com/gilmoreorless/css-shorthand-properties",
+        "description": "A simple list of CSS shorthand properties and which longhand properties they expand to.",
+        "tags": ["npm"]
       },
       {
         "name": "Sublime zoneinfo",
@@ -114,7 +121,7 @@
       },
       {
         "name": "Gradient Circus",
-        "url": "https://gilmoreorless.github.io/sydcss-preso-gradient-circus/",
+        "url": "https://gilmoreorless.github.io/preso-gradient-circus/",
         "img": "/gilhub/img/project-gradient-circus.png",
         "description": "A overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Recording available on YouTube.</a>"
       }
