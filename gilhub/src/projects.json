@@ -114,16 +114,22 @@
     "title": "Presentations",
     "projects": [
       {
-        "name": "Ease yourself into animation",
-        "url": "https://gilmoreorless.github.io/sydjs-preso-easing/",
-        "img": "/gilhub/img/project-easing.png",
-        "description": "A primer on how easing works in animations and how it’s coded in various JS frameworks."
-      },
-      {
         "name": "Gradient Circus",
         "url": "https://gilmoreorless.github.io/preso-gradient-circus/",
-        "img": "/gilhub/img/project-gradient-circus.png",
-        "description": "A overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Recording available on YouTube.</a>"
+        "img": "/gilhub/img/presentation-gradient-circus.png",
+        "description": "An overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Recording available on YouTube.</a>"
+      },
+      {
+        "name": "Time zone of your life @ JSConf EU 2015",
+        "url": "https://www.youtube.com/watch?v=2BdFg5JT9lg",
+        "img": "/gilhub/img/presentation-jsconfeu15.jpg",
+        "description": "Take a journey into the weird and wonderful (horrible) world of dealing with time zones in software, and learn how I screwed it up."
+      },
+      {
+        "name": "Ease yourself into animation",
+        "url": "https://gilmoreorless.github.io/sydjs-preso-easing/",
+        "img": "/gilhub/img/presentation-easing.png",
+        "description": "A primer on how easing works in animations and how it’s coded in various JS frameworks."
       }
     ]
   }]
