@@ -115,21 +115,30 @@
     "projects": [
       {
         "name": "Gradient Circus",
-        "url": "https://gilmoreorless.github.io/preso-gradient-circus/",
+        "url": "https://gilmoreorless.github.io/preso-gradient-circus/decompress16/",
         "img": "/gilhub/img/presentation-gradient-circus.png",
-        "description": "An overview of what CSS gradients can be used for, as well as the mathematics of how they work. <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Recording available on YouTube.</a>"
+        "description": [
+          "An overview of what CSS gradients can be used for, as well as the mathematics of how they work.",
+          "<a href='https://gilmoreorless.github.io/preso-gradient-circus/decompress16/'>Slides (Decompress 2016)</a> | <a href='https://www.youtube.com/watch?v=y_GT0mOmiE0'>Video (SydCSS 2015).</a>"
+        ]
       },
       {
-        "name": "Time zone of your life @ JSConf EU 2015",
+        "name": "Time zone of your life",
         "url": "https://www.youtube.com/watch?v=2BdFg5JT9lg",
         "img": "/gilhub/img/presentation-jsconfeu15.jpg",
-        "description": "Take a journey into the weird and wonderful (horrible) world of dealing with time zones in software, and learn how I screwed it up."
+        "description": [
+          "Take a journey into the weird and wonderful (horrible) world of dealing with time zones in software, and learn how I screwed it up.",
+          "Videos: <a href='https://www.youtube.com/watch?v=2BdFg5JT9lg'>JSConf EU 2015</a> | <a href='https://www.youtube.com/watch?v=FvTcR2NTobo'>JSConf AU 2014</a>"
+        ]
       },
       {
         "name": "Ease yourself into animation",
         "url": "https://gilmoreorless.github.io/sydjs-preso-easing/",
         "img": "/gilhub/img/presentation-easing.png",
-        "description": "A primer on how easing works in animations and how it’s coded in various JS frameworks."
+        "description": [
+          "A primer on how easing works in animations and how it’s coded in various JS frameworks.",
+          "<a href='https://gilmoreorless.github.io/sydjs-preso-easing/'>Slides (SydJS 2012)</a>"
+        ]
       }
     ]
   }]

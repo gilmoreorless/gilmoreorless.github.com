@@ -13,6 +13,11 @@ gulp.task('html', function () {
     var projectsData = JSON.parse(projectsFile);
     projectsData.categories.forEach(function (category, i) {
         category.theme = themeClasses[i] || '';
+        category.projects.forEach(function (project) {
+            if (Array.isArray(project.description)) {
+                project.description = project.description.join('</p><p>');
+            }
+        });
     });
 
     return gulp.src('gilhub/src/index.html')
