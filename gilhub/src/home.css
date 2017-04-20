@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: #112;
+    background-color: #001;
     color: #fff;
     font-family: sans-serif;
     font-weight: 400;
@@ -21,7 +24,7 @@ a {
 a:hover {
     text-decoration: none;
 }
-header,
+.header,
 h2 {
     padding: 0 1rem;
 }
@@ -29,9 +32,42 @@ h2 {
 
 /*** Themed sections ***/
 
-header,
+.header {
+    overflow: hidden;
+}
+.header .unsemantic-empty-shape-element {
+    background-image: radial-gradient(farthest-side at top right, #ff0 0%, #f90 85%, #e90 90%, transparent 100%);
+    height: 6rem;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    width: 6rem;
+}
+
+@media (min-width: 40rem) {
+    .header .unsemantic-empty-shape-element {
+        height: 8rem;
+        top: -2rem;
+        width: 10rem;
+    }
+}
+@media (min-width: 60rem) {
+    .header .unsemantic-empty-shape-element {
+        height: 10rem;
+        top: -4rem;
+        width: 12rem;
+    }
+}
+@media (min-width: 76rem) {
+    .header .unsemantic-empty-shape-element {
+        height: 12rem;
+        top: -1rem;
+        width: 12rem;
+    }
+}
+
+.header,
 .category-content {
-    box-sizing: border-box;
     max-width: 60rem;
     margin: 0 auto;
 }
@@ -39,6 +75,7 @@ header,
     background-repeat: no-repeat;
     padding-top: 0.25rem;
     padding-bottom: 1.5rem;
+    transition: opacity 1s;
 }
 .category-content h2 {
     font-size: 2rem;
@@ -48,6 +85,11 @@ header,
 .category-content h2::before {
     font-weight: normal;
 }
+.category-description {
+    font-style: italic;
+    padding: 0 1rem;
+}
+
 
 /*** Project listings base ***/
 
@@ -59,7 +101,6 @@ header,
     justify-content: space-between;
 }
 .project-item {
-    box-sizing: border-box;
     flex: 1 1 15rem;
     list-style: none;
     margin: 0;
@@ -85,6 +126,75 @@ header,
 .project-title,
 .project-description {
     position: relative;
+}
+
+
+/*** Themed items - deep space ***/
+
+.category-theme-deep-space {
+    background-image:
+        radial-gradient(circle at 47% 83%, rgba(250, 221, 185, 0.6), transparent 6px),
+        radial-gradient(circle at 7% 4%, rgba(228, 217, 208, 0.3), transparent 5px),
+        radial-gradient(circle at 25% 39%, rgba(202, 201, 203, 0.6), transparent 7px),
+        radial-gradient(circle at 46% 83%, rgba(240, 202, 182, 0.4), transparent 5px),
+        radial-gradient(circle at 87% 42%, rgba(240, 220, 165, 0.4), transparent 5px),
+        radial-gradient(circle at 57% 8%, rgba(254, 226, 197, 0.4), transparent 6px),
+        radial-gradient(circle at 96% 60%, rgba(249, 203, 157, 0.6), transparent 8px),
+        radial-gradient(circle at 7% 81%, rgba(249, 227, 239, 0.5), transparent 6px),
+        radial-gradient(circle at 35% 39%, rgba(221, 203, 225, 0.4), transparent 5px),
+        radial-gradient(circle at 23% 51%, rgba(222, 218, 224, 0.3), transparent 11px),
+        radial-gradient(circle at 90% 72%, rgba(216, 212, 251, 0.5), transparent 5px),
+        linear-gradient(to bottom, #001, #112);
+    background-repeat: repeat;
+    background-size:
+        61% 43%,
+        31% 83%,
+        53% 37%,
+        53% 59%,
+        79% 79%,
+        73% 67%,
+        97% 97%,
+        47% 97%,
+        89% 29%,
+        71% 61%,
+        89% 83%,
+        100% 100%;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.category-theme-deep-space::before {
+    animation: h2g2 30s linear forwards;
+    background: hsl(120, 14%, 66%);
+    border-radius: 0.2em;
+    box-shadow: -4px 4px 3px 2px hsl(120, 14%, 36%);
+    color: #001;
+    content: "DON'T PANIC";
+    height: 4em;
+    left: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translate(0, 0) scale(0.5) translateZ(100px) rotateZ(-22deg) rotateY(33deg) rotateX(33deg);
+    width: 4em;
+}
+
+@keyframes h2g2 {
+    0% {
+        transform: translate(-10em, 2em) scale(0.5) translateZ(100px) rotateZ(-22deg) rotateY(33deg) rotateX(33deg);
+    }
+    100% {
+        transform: translate(110vw, -2em) scale(0.5) translateZ(100px) rotateZ(-2deg) rotateY(43deg) rotateX(23deg);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .category-theme-deep-space::before {
+        animation: none;
+        left: 2em;
+    }
 }
 
 

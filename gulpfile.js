@@ -6,7 +6,7 @@ var postcssGradients = require('postcss-gradient-transparency-fix');
 var mustache = require('gulp-mustache');
 var concat = require('gulp-concat-util');
 
-var themeClasses = ['space', 'sky', 'forest', 'ground'];
+var themeClasses = ['deep-space', 'space', 'sky', 'forest', 'ground'];
 
 gulp.task('html', function () {
     var projectsFile = fs.readFileSync('gilhub/src/projects.json');

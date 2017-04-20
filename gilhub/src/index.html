@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="unsemantic-empty-shape-element"></div>
         <h1>gilmoreorless</h1>
-        <p>A collection of my open source <a href="https://github.com/gilmoreorless">projects on GitHub</a>.
-            I also write things in blog form at <a href="https://shoehornwithteeth.com/">shoehornwithteeth.com</a>,
-            tweet stuff at <a href="https://twitter.com/iamnotyourbroom">@iamnotyourbroom</a>,
-            and make visual code experiments on <a href="https://bl.ocks.org/gilmoreorless">bl.ocks.org</a>.</p>
-        <p>This page doubles as an experiment in how much styling can be done with just CSS gradients.</p>
+        <p>Hi there! This is a collection of my publicly-available coding projects and presentations.
+            Most of the code is <a href="https://github.com/gilmoreorless">open source on GitHub</a>.
+            I also write things in blog form at <a href="https://shoehornwithteeth.com/">shoehornwithteeth.com</a>
+            and tweet stuff at <a href="https://twitter.com/iamnotyourbroom">@iamnotyourbroom</a>.</p>
+        <p>This page doubles as an experiment in how much styling can be done with just CSS gradients.
+            Every bit of theming on this page is pure CSS – the only image files are project screenshots.</p>
     </header>
     {{#categories}}
     <div class="category category-theme-{{theme}}">
         <div class="category-content">
             <h2>{{title}}</h2>
+            {{#description}}
+            <p class="category-description">{{{description}}}</p>
+            {{/description}}
             <ul class="project-list">
                 {{#projects}}
                 <li class="project-item{{#img}} has-preview{{/img}}">

@@ -1,7 +1,13 @@
 {
   "categories": [{
-    "title": "Libraries & scripts",
+    "title": "Fun & frivolous",
+    "description": "Not every project should be Serious Business™. Here are some things I’ve done as a creative outlet – a mixture of experiments, learning exercises, and silly things to make people laugh.",
     "projects": [
+      {
+        "name": "bl.ocks.org experiments",
+        "url": "https://bl.ocks.org/gilmoreorless",
+        "description": "Some visual code art and experiments. Although the cool kids are all using CodePen these days."
+      },
       {
         "name": "drone-ver",
         "url": "https://github.com/gilmoreorless/drone-ver",
@@ -10,7 +16,7 @@
       },
       {
         "name": "emoji-censor",
-        "url": "https://github.com/gilmoreorless/emoji-censor",
+        "url": "https://gilmoreorless.github.io/emoji-censor",
         "description": "Censor out any emoji characters in a piece of text, either visually or audibly.",
         "tags": ["ridiculous"]
       },
@@ -18,14 +24,20 @@
         "name": "yakstack",
         "url": "https://github.com/gilmoreorless/yakstack",
         "description": "A command-line utility to help you stack your yaks.",
-        "tags": ["cli", "pip"]
+        "tags": ["cli", "pip", "ridiculous"]
       },
       {
         "name": "chuckles",
         "url": "https://github.com/gilmoreorless/chuckles",
         "description": "A library for creating ventriloquist dummy effects in canvas — because that’s what everyone needs, right?",
         "tags": ["ridiculous"]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Libraries & scripts",
+    "description": "Fun’s over! This is where the “proper” projects start, I guess.",
+    "projects": [
       {
         "name": "postcss-gradient-transparency-fix",
         "url": "https://github.com/gilmoreorless/postcss-gradient-transparency-fix",
