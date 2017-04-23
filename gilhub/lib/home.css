@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 h1, h2, h3 {
     font-weight: 700;
@@ -254,13 +255,16 @@ h2 {
 }
 
 
-/*** Themed items - sky ***/
+/*** Themed items - clouds ***/
 
-.category-theme-sky {
-    background-image: radial-gradient(150% 100% at 50% 100%, #48A6E8 80%, #336);
-    padding-top: 5rem;
+.category-theme-clouds {
+    background-color: #48A6E8;
 }
-.category-theme-sky .project-item {
+.category-theme-clouds-top {
+    background-image: radial-gradient(150% 100% at 50% 100%, #48A6E8 80%, #336);
+    padding-top: 6rem;
+}
+.category-theme-clouds .project-item {
     background-image:
         /* grey rain smudge at the bottom */
         radial-gradient(33% 17% at 50% 82%, #ccc 20%, #eee 75%, rgba(238, 238, 238, 0)),
@@ -286,22 +290,27 @@ h2 {
     background-repeat: no-repeat;
     color: #336;
     margin: .5rem;
-    margin-top: 3rem;
     padding: 3rem 0 1rem 0;
 }
-.category-theme-sky .project-item:nth-child(3n-2) {
+.category-theme-clouds .project-item.has-preview {
+    margin-top: 3rem;
+}
+.category-theme-clouds .project-item:nth-child(3n-2) {
+    margin-top: 2rem;
+}
+.category-theme-clouds .project-item.has-preview:nth-child(3n-2) {
     margin-top: 5rem;
 }
-.category-theme-sky .project-item:nth-child(2n) {
+.category-theme-clouds .project-item:nth-child(2n) {
     margin-bottom: 2rem;
 }
-.category-theme-sky a {
+.category-theme-clouds a {
     color: #336;
 }
-.category-theme-sky .project-details {
+.category-theme-clouds .project-details {
     padding: 0 4rem;
 }
-.category-theme-sky .project-preview {
+.category-theme-clouds .project-preview {
     border-radius: 50%;
     position: absolute;
     top: -2.85rem;
@@ -372,6 +381,7 @@ h2 {
     display: block;
     height: 1.5rem;
     left: calc(50% - 5rem);
+    pointer-events: none;
     position: absolute;
     top: 7.5rem;
     width: 10rem;

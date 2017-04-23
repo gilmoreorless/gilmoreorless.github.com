@@ -20,7 +20,7 @@
             Every bit of theming on this page is pure CSS – the only image files are project screenshots.</p>
     </header>
     {{#categories}}
-    <div class="category category-theme-{{theme}}">
+    <div class="category{{#themes}} category-theme-{{.}}{{/themes}}">
         <div class="category-content">
             <h2>{{title}}</h2>
             {{#description}}
@@ -35,7 +35,9 @@
                             <img src="{{{img}}}" alt="" class="project-preview">
                         {{/img}}
                         <h3 class="project-title"><a href="{{{url}}}">{{name}}</a></h3>
-                        <p class="project-description">{{{description}}}</p>
+                        {{#description}}
+                        <p class="project-description">{{{.}}}</p>
+                        {{/description}}
                     </div>
                 </li>
                 {{/projects}}

@@ -15,10 +15,16 @@
         "tags": ["cli", "npm", "ridiculous"]
       },
       {
-        "name": "emoji-censor",
+        "name": "Emoji Censor",
         "url": "https://gilmoreorless.github.io/emoji-censor",
         "description": "Censor out any emoji characters in a piece of text, either visually or audibly.",
         "tags": ["ridiculous"]
+      },
+      {
+        "name": "Numberwang browser extension",
+        "url": "https://github.com/gilmoreorless/browser-numberwang",
+        "description": "Turn every web page into an interactive game of Numberwang!",
+        "tags": ["extension", "ridiculous"]
       },
       {
         "name": "yakstack",
@@ -102,6 +108,27 @@
         "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
         "img": "/gilhub/img/project-dst-rules.png",
         "description": "An overview of all the different times of the year when countries and regions use daylight saving time."
+      }
+    ]
+  },
+  {
+    "title": "Browser extensions",
+    "projects": [
+      {
+        "name": "Open new tab here",
+        "url": "https://chrome.google.com/webstore/detail/open-new-tab-here/kpoogeanhkgkbkagbgeibbokbjdbjodb",
+        "description": [
+          "Open a new tab next to the one you’re viewing, via a button or a keyboard shortcut.",
+          "<a href='https://chrome.google.com/webstore/detail/open-new-tab-here/kpoogeanhkgkbkagbgeibbokbjdbjodb'>Chrome web store</a> | <a href='https://github.com/gilmoreorless/chrome-new-tab-here'>Source code</a>"
+        ]
+      },
+      {
+        "name": "Airport code explainer",
+        "url": "https://chrome.google.com/webstore/detail/airport-code-explainer/mceehpfaopbngcflhlgkabgjonnngmjf",
+        "description": [
+          "Explain any IATA airport codes in a web page to avoid having to look them up. Especially useful when using Twitter.",
+          "<a href='https://chrome.google.com/webstore/detail/airport-code-explainer/mceehpfaopbngcflhlgkabgjonnngmjf'>Chrome web store</a> | <a href='https://github.com/gilmoreorless/convert-airport-codes'>Source code</a>"
+        ]
       }
     ]
   },

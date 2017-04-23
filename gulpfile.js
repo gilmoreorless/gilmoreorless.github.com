@@ -1,22 +1,21 @@
 var fs = require('fs');
 var gulp = require('gulp');
+var JSON5 = require('json5');
 var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
 var postcssGradients = require('postcss-gradient-transparency-fix');
 var mustache = require('gulp-mustache');
 var concat = require('gulp-concat-util');
 
-var themeClasses = ['deep-space', 'space', 'sky', 'forest', 'ground'];
+var themeClasses = ['deep-space', 'space', ['clouds', 'clouds-top'], 'clouds', 'forest', 'ground'];
 
 gulp.task('html', function () {
     var projectsFile = fs.readFileSync('gilhub/src/projects.json');
-    var projectsData = JSON.parse(projectsFile);
+    var projectsData = JSON5.parse(projectsFile);
     projectsData.categories.forEach(function (category, i) {
-        category.theme = themeClasses[i] || '';
+        category.themes = [].concat(themeClasses[i] || '');
         category.projects.forEach(function (project) {
-            if (Array.isArray(project.description)) {
-                project.description = project.description.join('</p><p>');
-            }
+            project.description = [].concat(project.description);
         });
     });
 
