@@ -70,9 +70,15 @@
       },
       {
         "name": "Sublime zoneinfo",
-        "url": "https://github.com/gilmoreorless/sublime-zoneinfo",
-        "description": "A Sublime Text package that adds syntax highlighting for IANA time zone database files (a.k.a. zoneinfo files).",
+        "url": "https://packagecontrol.io/packages/zoneinfo",
+        "description": "A Sublime Text package that adds syntax highlighting for IANA time zone database files.",
         "tags": ["sublime"]
+      },
+      {
+        "name": "VSCode zoneinfo",
+        "url": "https://marketplace.visualstudio.com/items?itemName=gilmoreorless.vscode-zoneinfo",
+        "description": "A Visual Studio Code extension that adds syntax highlighting for IANA time zone database files.",
+        "tags": ["vscode"]
       },
       {
         "name": "jQuery nearest element",
@@ -128,6 +134,14 @@
         "description": [
           "Explain any IATA airport codes in a web page to avoid having to look them up. Especially useful when using Twitter.",
           "<a href='https://chrome.google.com/webstore/detail/airport-code-explainer/mceehpfaopbngcflhlgkabgjonnngmjf'>Chrome web store</a> | <a href='https://github.com/gilmoreorless/convert-airport-codes'>Source code</a>"
+        ]
+      },
+      {
+        "name": "Emoji censor",
+        "url": "https://chrome.google.com/webstore/detail/emoji-censor/heceohcbaahlibmaeheomnkpmhnggnld",
+        "description": [
+          "Redacts all emoji characters on a page, replacing them with black boxes.",
+          "<a href='https://chrome.google.com/webstore/detail/emoji-censor/heceohcbaahlibmaeheomnkpmhnggnld'>Chrome web store</a> | <a href='https://addons.mozilla.org/addon/emoji-censor/'>Firefox addons</a>"
         ]
       }
     ]
