@@ -111,7 +111,7 @@
       },
       {
         "name": "Daylight saving rules around the world",
-        "url": "https://gilmoreorless.github.io/experiments/dataviz/dst.html",
+        "url": "https://gilmoreorless.github.io/experiments/datavis/dst.html",
         "img": "/gilhub/img/project-dst-rules.png",
         "description": "An overview of all the different times of the year when countries and regions use daylight saving time."
       }
