@@ -45,6 +45,12 @@
     "description": "Fun’s over! This is where the “proper” projects start, I guess.",
     "projects": [
       {
+        "name": "moment-timezone-data-webpack-plugin",
+        "url": "https://github.com/gilmoreorless/moment-timezone-data-webpack-plugin",
+        "description": "A webpack plugin for moment-timezone to reduce how much data is loaded in the browser.",
+        "tags": ["npm", "webpack"]
+      },
+      {
         "name": "postcss-gradient-transparency-fix",
         "url": "https://github.com/gilmoreorless/postcss-gradient-transparency-fix",
         "description": "A PostCSS plugin to fix gradient transparency for certain browsers (looking at you, Safari).",
