@@ -9,7 +9,7 @@ var concat = require('gulp-concat-util');
 
 var themeClasses = ['deep-space', 'space', ['clouds', 'clouds-top'], 'clouds', 'forest', 'ground'];
 
-gulp.task('html', function () {
+function html() {
     var projectsFile = fs.readFileSync('gilhub/src/projects.json');
     var projectsData = JSON5.parse(projectsFile);
     projectsData.categories.forEach(function (category, i) {
@@ -22,9 +22,9 @@ gulp.task('html', function () {
     return gulp.src('gilhub/src/index.html')
         .pipe(mustache(projectsData))
         .pipe(gulp.dest('./'));
-});
+};
 
-gulp.task('css', function () {
+function css() {
     return gulp.src('gilhub/src/*.css')
         .pipe(postcss([
             postcssGradients,
@@ -33,13 +33,16 @@ gulp.task('css', function () {
             })
         ]))
         .pipe(gulp.dest('gilhub/lib'));
-});
+};
 
-gulp.task('scripts', function () {
+function scripts() {
     return gulp.src(['node_modules/fontfaceobserver/fontfaceobserver.js', 'gilhub/src/*.js'])
         .pipe(concat('home.js'))
         .pipe(concat.header('// https://github.com/bramstein/fontfaceobserver\n'))
         .pipe(gulp.dest('gilhub/lib'));
-});
+};
 
-gulp.task('default', ['html', 'css', 'scripts']);
+exports.html = html;
+exports.css = css;
+exports.scripts = scripts;
+exports.default = gulp.series(html, css, scripts);

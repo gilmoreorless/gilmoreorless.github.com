@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "droneVersion": "1.exasperated.0.0.tallots.1447397897.7",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gilmoreorless/gilmoreorless.github.com.git"
@@ -19,12 +21,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.5",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat-util": "^0.5.5",
-    "gulp-mustache": "^2.3.0",
-    "gulp-postcss": "^6.4.0",
-    "gulp-sourcemaps": "^1.12.1",
-    "json5": "^0.5.1",
+    "gulp-mustache": "^4.1.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "json5": "^2.1.2",
     "postcss-gradient-transparency-fix": "^3.0.0"
   }
 }
