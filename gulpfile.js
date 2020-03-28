@@ -26,10 +26,12 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
     return gulp.src('gilhub/src/*.css')
-        .pipe(postcss([ autoprefixer({
-            browsers: ['last 3 versions', 'Firefox ESR'],
-            cascade: true
-        }), postcssGradients ]))
+        .pipe(postcss([
+            postcssGradients,
+            autoprefixer({
+                cascade: true
+            })
+        ]))
         .pipe(gulp.dest('gilhub/lib'));
 });
 
