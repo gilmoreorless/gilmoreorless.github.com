@@ -166,8 +166,7 @@ h2 {
     transform-style: preserve-3d;
 }
 .category-theme-deep-space::before {
-    -webkit-animation: h2g2 30s linear forwards;
-            animation: h2g2 30s linear forwards;
+    animation: h2g2 30s linear forwards;
     background: hsl(120, 14%, 66%);
     border-radius: 0.2em;
     box-shadow: -4px 4px 3px 2px hsl(120, 14%, 36%);
@@ -183,15 +182,6 @@ h2 {
     width: 4em;
 }
 
-@-webkit-keyframes h2g2 {
-    0% {
-        transform: translate(-10em, 2em) scale(0.5) translateZ(100px) rotateZ(-22deg) rotateY(33deg) rotateX(33deg);
-    }
-    100% {
-        transform: translate(110vw, -2em) scale(0.5) translateZ(100px) rotateZ(-2deg) rotateY(43deg) rotateX(23deg);
-    }
-}
-
 @keyframes h2g2 {
     0% {
         transform: translate(-10em, 2em) scale(0.5) translateZ(100px) rotateZ(-22deg) rotateY(33deg) rotateX(33deg);
@@ -203,8 +193,7 @@ h2 {
 
 @media (prefers-reduced-motion) {
     .category-theme-deep-space::before {
-        -webkit-animation: none;
-                animation: none;
+        animation: none;
         left: 2em;
     }
 }
@@ -399,23 +388,12 @@ h2 {
 }
 /* Bird animation */
 .category-theme-forest .project-item:nth-child(2) .project-title::after {
-    -webkit-animation: bird-head 20s infinite;
-            animation: bird-head 20s infinite;
+    animation: bird-head 20s infinite;
     content: '🐦';
     font-weight: normal;
     margin-left: 2rem;
     margin-top: -4rem;
     position: absolute;
-}
-@-webkit-keyframes bird-head {
-    0%, 85%, 100% {
-        opacity: 0;
-        transform: translateY(0.25rem) scale(0.2, 0.8);
-    }
-    90%, 98% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
 }
 @keyframes bird-head {
     0%, 85%, 100% {

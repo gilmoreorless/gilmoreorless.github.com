@@ -4,9 +4,9 @@
     "description": "Not every project should be Serious Business™. Here are some things I’ve done as a creative outlet – a mixture of experiments, learning exercises, and silly things to make people laugh.",
     "projects": [
       {
-        "name": "bl.ocks.org experiments",
-        "url": "https://bl.ocks.org/gilmoreorless",
-        "description": "Some visual code art and experiments. Although the cool kids are all using CodePen these days."
+        "name": "Observable notebooks",
+        "url": "https://observablehq.com/@gilmoreorless",
+        "description": "Some interactive experiments and visual code art."
       },
       {
         "name": "drone-ver",
